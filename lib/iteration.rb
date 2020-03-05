@@ -22,13 +22,7 @@ def find_greater_pair(src)
   # that are in the inner Arrays
 
   def greaterNumber(num1, num2)
-    greater = 0
-    if (num1 > num2)
-      greater = num1
-    else
-      greater = num2
-    end
-    greater
+    (num1 > num2)? num1 : num2
   end
 
   new_Array = []
@@ -64,11 +58,10 @@ def total_even_pairs(src)
 
     if (isEven(src[row_index][0]) && isEven(src[row_index][1]))
       totalEven = totalEven + src[row_index][0] + src[row_index][1]
-  
     end
-    row_index += 1
+
+  row_index += 1
   end
 
   totalEven
-
 end
